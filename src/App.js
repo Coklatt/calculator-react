@@ -27,7 +27,7 @@ class App extends Component {
     };
 
     calculate = () => {
-        let checkResult = '';
+        var checkResult = '';
         if (this.state.result.includes('--')) {
             checkResult = this.state.result.replace('--', '+');
         } else {
@@ -62,7 +62,7 @@ class App extends Component {
         return (
             <div>
                 <div className="calculator-body">
-                    <h1>Calculator React</h1>
+                    <h1>Reactulator</h1>
                     <ResultComponent result={this.state.result} />
                     <KeyPadComponent onClick={this.onClick} />
                 </div>
